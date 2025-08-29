@@ -11,6 +11,7 @@ type Config struct {
 	DBPassword string
 	DBName     string
 	ServerPort string
+	LogLevel   string // Уровень логирования БД: silent, error, warn, info
 }
 
 func NewConfig() *Config {
@@ -21,6 +22,7 @@ func NewConfig() *Config {
 		DBPassword: getEnv("DB_PASSWORD", "postgres"),
 		DBName:     getEnv("DB_NAME", "access-box"),
 		ServerPort: getEnv("SERVER_PORT", "8080"),
+		LogLevel:   getEnv("DB_LOG_LEVEL", "silent"), // По умолчанию отключаем логи
 	}
 }
 

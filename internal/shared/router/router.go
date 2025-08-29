@@ -9,6 +9,7 @@ import (
 
 // SetupRouter настраивает все маршруты приложения
 func SetupRouter(userHandler *user.Handler, authMiddleware *middleware.AuthMiddleware) *gin.Engine {
+	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 
 	// Публичные маршруты
