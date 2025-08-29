@@ -1,0 +1,96 @@
+# Переменные окружения
+.env
+.env.local
+.env.production
+.env.staging
+
+# Бинарные файлы
+access-box
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go специфичные файлы
+*.test
+*.out
+go.work
+
+# Временные файлы
+*.tmp
+*.temp
+*.log
+*.pid
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Системные файлы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Логи и отладочные файлы
+logs/
+*.log
+debug/
+
+# Кэш и временные директории
+.cache/
+tmp/
+temp/
+
+# База данных
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# GitHub Actions артефакты
+.github/actions/
+
+# Тестовые покрытия
+coverage.out
+coverage.html
+
+# Вендоры (если используете)
+vendor/
+
+# Миграции (если не хотите их в git)
+# migrations/
+
+# Конфигурационные файлы с секретами
+config/secrets.yaml
+config/production.yaml
+secrets.json
+
+# Сертификаты и ключи
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Архивы
+*.zip
+*.tar.gz
+*.rar
+
+# Backup файлы
+*.bak
+*.backup
+*~
